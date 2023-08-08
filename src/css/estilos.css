@@ -1,0 +1,106 @@
+html {
+    background-image: url(../imagens/bg-repeat.jpg);
+    background-size: contain;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.duvidas {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 0 50px;
+}
+
+.duvidas .titulo {
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.duvidas .descricao {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.duvidas .titulo,
+.duvidas .descricao {
+    padding-right: 50px;
+    max-width: 600px;
+}
+
+.duvidas .card-formulario {
+    background-color: #fff;
+    box-shadow: 2px 2px 14px -7px rgba(0, 0, 0, 0.75);
+    width: 340px;
+    height: 380px;
+}
+
+.duvidas .card-formulario .formulario .preencher{
+    margin-left: 20px;
+}
+
+.duvidas .card-formulario .formulario .preencher:first-child{
+    margin-top: 20px;
+}
+
+.duvidas .card-formulario .formulario input {
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.duvidas .card-formulario .formulario textarea {
+    border: 2px solid #000;
+    width: 300px;
+    height: 100px;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.duvidas .card-formulario .formulario .obrigatorio{
+    font-size: 0.8rem;
+    color: #F52E2E;
+    display: flex;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.duvidas .card-formulario .formulario .ocultar{
+    visibility: collapse;
+}
+
+.duvidas .card-formulario .atencao {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    padding: 5px 15px;
+}
+
+.duvidas .card-formulario .btn-enviar {
+    color: #fff;
+    background-color: #3CCC87;
+    height: 40px;
+    width: 300px;
+    margin: 10px 20px;
+    border: none;
+}
+
+/* INTERAÇÃO COM JS */
+
+.duvidas .card-formulario .formulario .invalido{
+    border: 2px solid #F52E2E;
+    border-radius: 5px;
+}
+
+.duvidas .card-formulario .formulario .valido{
+    border: 2px solid #00C22B;
+    border-radius: 5px;
+}
