@@ -1,0 +1,10 @@
+@media (max-width: 500px) {
+    .duvidas{
+        flex-wrap: wrap;    
+    }
+    .duvidas div {
+        padding-bottom: 50px;
+        padding-right: 0;
+    }
+
+}

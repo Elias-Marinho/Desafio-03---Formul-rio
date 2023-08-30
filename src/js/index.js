@@ -1,30 +1,17 @@
-const btnEnviar = document.querySelector(".btn-enviar")
-const preencher = document.querySelectorAll(".preencher")
-const aviso = document.querySelectorAll(".obrigatorio")
+const campos = document.querySelectorAll(".preencher")
+const botaoEnviar = document.querySelector(".btn-enviar")
 
+botaoEnviar.addEventListener('click', (e) =>{
+    e.preventDefault()
 
-btnEnviar.addEventListener("click", function () {
-
-    preencher.forEach(function (valor) {
-        if (valor.value === "") {
-            valor.classList.add("invalido")
-            valor.classList.remove("valido")
-            aviso.forEach(function (checagem) {
-                if (valor.value === ""){
-                checagem.classList.remove("ocultar")
-                }
-            })
-
+    campos.forEach((input) =>{
+        if (input.value) {
+            input.classList.add("valido")
+            input.nextElementSibling.classList.add("ocultar")
         } else {
-            valor.classList.add("valido")
-            valor.classList.remove("invalido")
-            aviso.forEach(function (checagem) {
-                if (valor.value === ""){
-                checagem.classList.add("ocultar")
-                }
-            })
+            input.classList.add("invalido")
+            input.classList.remove("valido")
+            input.nextElementSibling.classList.remove("ocultar")
         }
-
     })
-
 })
